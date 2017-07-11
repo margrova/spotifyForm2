@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Spotify Form Take Two</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="CSS/min/main-min.css">
+        <script src='https://www.google.com/recaptcha/api.js'></script>
+
+  </head>
+
+  <body>
+    <div class="formContainer">
+        <div id="logo">
+          <img src="images/spotifyLogo.png" alt="Spotify Logo"><hr>
+        </div>
+
+          <div id="faceBookButton">
+            <h5>sign up with facebook</h5>
+          </div>
+
+          <div id="content">
+
+            <h5><span>or</span></h5>
+
+            <h3 id="signUp">Sign up with your email address</h3>
+
+        <!--FORM-->
+            <form>
+              <ul>
+                <li><input type="email" placeholder="Email" class="inputValues"></li>
+                <li><input type="email" placeholder="Confirm email" class="inputValues"></li>
+                <li><input type="password" placeholder="Password" class="inputValues"></li>
+                <li><input type="text" placeholder="Username" class="inputValues"></li>
+              </ul>
+
+              <p id="dob">Date of birth:
+              </p>
+
+        <!--DOB INPUTS-->
+              <div class="dob">
+                <input list="month" placeholder="Month" name="month">
+                  <datalist id="month">
+                    <option value="January"></option>
+                    <option value="February"></option>
+                    <option value="March"></option>
+                    <option value="April"></option>
+                    <option value="May"></option>
+                    <option value="June"></option>
+                    <option value="July"></option>
+                    <option value="August"></option>
+                    <option value="September"></option>
+                    <option value="October"></option>
+                    <option value="November"></option>
+                    <option value="December"></option>
+                  </datalist>
+
+                <input id="day" type="number" placeholder="Day" name="day" min="1" max="31">
+
+                <input id="year" type="number" placeholder="Year" name="year" maxlength="4">
+              </div>  <!--END DOB DIV-->
+
+        <!--GENDER INPUT-->
+                <div class="gender">
+                  <input type="radio" name="gender" value="male">Male
+                  <input type="radio" name="gender" value="female">Female
+                  <input type="radio" name="gender" value="non-binary">Non-binary
+                </div>  <!--END GENDER DIV-->
+
+                <div class="checkBox">
+                  <input type="checkbox" id="checkBox">
+                  <label for="checkBox">&nbspShare my registration data with Spotify's content providers for marketing purposes.
+                  </label>
+                </div>
+
+                <div class="g-recaptcha" data-sitekey="6LevnigUAAAAAAmKfC7xSCm5T-sQX3pyTE3zFo9J"></div>
+            </form>
+
+          <p id="terms">By clicking on Sign up, you agree to <mark>Spotify's terms and conditions</mark> and <mark>privacy policy.</mark></p>
+
+          <!--SIGN UP BUTTON-->
+
+          <p class="button">
+            <h5 id=signUpButton>sign up</h5>
+          </p>
+
+          <p class="terms">Already have an account? <mark>&nbspLog in</mark</p>
+
+
+              </div> <!--END CONTENT DIV-->
+
+            </div> <!--END CONTAINER DIV-->
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>
+
+</html>
